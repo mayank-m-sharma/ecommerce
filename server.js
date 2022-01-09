@@ -26,6 +26,6 @@ app.get('/', (req, res) => {
 
 // server config
 const PORT = process.env.PORT
-app.listen(8800, () => {
+app.listen(PORT, () => {
     console.log(`Server running at port ${PORT}`);
 })
