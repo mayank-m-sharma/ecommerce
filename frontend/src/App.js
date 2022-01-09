@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react'
 
 function App() {
   const url = "https://jsonplaceholder.typicode.com/posts"
-  const url1 = "/api/product"
+  const url1 = "https://ecombackend1.herokuapp.com/api/product"
   const [products, setProducts] = useState([]);
     useEffect(() => {
     const fetchProducts = async () => {
