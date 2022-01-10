@@ -1,0 +1,8 @@
+.card {
+    display: flex;
+    flex-direction: column;
+}
+.card-top .card-img {
+    height: 100%;
+    width: 100px;
+}
