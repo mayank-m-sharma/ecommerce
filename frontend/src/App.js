@@ -1,14 +1,15 @@
 import './App.css';
 import React, {useEffect, useState} from 'react'
 import { Product } from './components/product/Product';
-import { Nav } from './components/nav/Nav';
+
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link
 } from "react-router-dom";
-
+import { SingleProduct } from './components/product/SingleProduct';
+import AddProductForm from './components/product/AddProductForm';
 const Home = ({products}) => {
   return (
     <div className="products-container"> 
@@ -36,6 +37,8 @@ function App() {
    <Router>
       <Routes>
           <Route path="/" element={<Home products={products}/>} />
+          <Route path="/products/:id" element={<SingleProduct />}/>
+          <Route path="/products/add" element={<AddProductForm/>}/>
       </Routes>
    </Router>
   );

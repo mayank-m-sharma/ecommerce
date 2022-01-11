@@ -1,8 +1,41 @@
 .card {
     display: flex;
     flex-direction: column;
+    margin: 50px;
 }
 .card-top .card-img {
     height: 100%;
     width: 100px;
+}
+
+.single_card {
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.single_card-img {
+    height: 100px;
+    width: auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.add-product {
+    text-align: center;
+}
+.btn-add {
+    margin-top: 2%;
+    padding: 20px;
+    background-color: rgb(31, 73, 59);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: auto;
 }
